@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Documentos/PROJETOS/Dev%20Python/ml-pipeline-polars/mlruns/312284133022811135/dbfd2b51e7c748b4bf47b6cc6f5d77cf/artifacts
+end_time: 1776086135883
+entry_point_name: ''
+experiment_id: '312284133022811135'
+lifecycle_stage: active
+run_id: dbfd2b51e7c748b4bf47b6cc6f5d77cf
+run_name: xgboost-run
+run_uuid: dbfd2b51e7c748b4bf47b6cc6f5d77cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1776086120515
+status: 3
+tags: []
+user_id: porte

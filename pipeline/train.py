@@ -38,7 +38,11 @@ def train(data_path: str, model_type: str = "xgboost", experiment: str = "demand
         mape = (abs((y_test - preds) / y_test)).mean() * 100
 
         mlflow.log_metrics({"mae": mae, "rmse": rmse, "mape": mape})
-        mlflow.sklearn.log_model(pipe, "model")
+        mlflow.sklearn.log_model(
+            sk_model=pipe, 
+            artifact_path="model", 
+            registered_model_name="demand-forecast"
+        )
         print(f"MAE={mae:.1f} | RMSE={rmse:.1f} | MAPE={mape:.1f}%")
     return pipe
 

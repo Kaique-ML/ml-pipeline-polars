@@ -1,0 +1,6 @@
+artifact_location: file:///D:/Documentos/PROJETOS/Dev%20Python/ml-pipeline-polars/mlruns/312284133022811135
+creation_time: 1776083162026
+experiment_id: '312284133022811135'
+last_update_time: 1776083162026
+lifecycle_stage: active
+name: demand-forecast
