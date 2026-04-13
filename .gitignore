@@ -1,0 +1,101 @@
+# ==============================================================================
+# GABRIEL KAIQUE - PORTFOLIO OMNI-GITIGNORE
+# Cobre: Python, ML, IA, Docker, Web Scraping e Cloud
+# ==============================================================================
+
+# --- Ambientes Virtuais e Dependências ---
+venv/
+env/
+.env
+.venv/
+ENV/
+bin/
+lib/
+include/
+share/
+build/
+dist/
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Python Cache e Compilação ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# --- Inteligência Artificial & Machine Learning (Modelos e Pesos) ---
+# Evita subir arquivos de GIGABYTES para o GitHub
+*.pth
+*.pt
+*.onnx
+*.joblib
+*.pkl
+*.h5
+*.weights
+*.bin
+*.model
+*.ckpt
+checkpoints/
+mlruns/             # MLflow logs e artefatos
+lightning_logs/
+wandb/              # Weights & Biases
+.dvc/               # Data Version Control (se usar)
+
+# --- Bancos de Dados e Dados Locais ---
+*.db
+*.sqlite3
+*.sqlite
+data/raw/           # Bases de dados brutas pesadas
+data/processed/     # Bases processadas
+!data/sample.csv    # EXCETO arquivos de exemplo (importante para o portfólio)
+outputs/
+reports/*.pdf
+reports/*.html
+.teradata/
+
+# --- Logs e Performance ---
+*.log
+logs/
+.ipynb_checkpoints
+.spyderproject
+.settings
+profile_default/
+ipython_config.py
+
+# --- Ferramentas e IDEs ---
+.vscode/            # Configurações pessoais do VS Code
+!.vscode/settings.json # Descomente se quiser compartilhar extensões recomendadas
+.idea/
+.project
+.pydevproject
+.DS_Store           # Arquivos de sistema Mac
+Thumbs.db           # Arquivos de sistema Windows
+
+# --- Testes e Cobertura ---
+.pytest_cache/
+.tox/
+.coverage
+.cache
+htmlcov/
+nosetests.xml
+coverage.xml
+.hypothesis/
+
+# --- Docker e Infra ---
+.docker/
+docker-compose.override.yml
+.localstack/
+
+# --- Credenciais e Chaves (SEGURANÇA CRÍTICA) ---
+.env*
+!.env.example       # Mantém o exemplo para os outros saberem o que preencher
+*.pem
+*.key
+*.pub
+credentials.json
+client_secret.json
+aws_config
+aws_credentials
